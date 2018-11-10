@@ -29,4 +29,6 @@ app.get('/preview/:key', cors(), (req, res) => {
   );
 });
 
-app.listen(3000);
+var port = process.env.PORT || 3000;
+console.log(port);
+app.listen(port);
