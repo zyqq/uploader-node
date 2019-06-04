@@ -23,8 +23,8 @@ app.get('/preview/:key', cors(), (req, res) => {
         'Content-Type': 'image/jpeg',
       },
     },
-    error => {
-      console.log(error);
+    (error) => {
+      console.log('error', error);
     }
   );
 });
